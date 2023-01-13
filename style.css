@@ -1,77 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body{
+	box-sizing: border-box;
 	padding: 0;
 	margin: 0;	
-	width:100vw;
-	height: 100vh;	
+	font-family:'Poppins', sans-serif;
+
 }
+h2{
+	font-weight: 400;
+}
+
 .panel{
+	background-color: #ffcfdf;
+	background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-.question-container{
-	margin: 10px;
-	padding: 5px;
-	width: 80vw;
-	height: 10vh;
-	background-color: #c7dddf;
-	font-size: x-large;
-	text-align: center;
-	
-}
-.result{
-	margin: 10px;
-	padding: 5px;
-	width:80vw;
-	height: 10vh;
-	text-align: center;
-	font-size: 50px;
-	
-}
-.option-container{
-	display: flex;
-	justify-content: space-around;
-	margin: 10px;
-	padding: 5px;
-	width: 80vw;
-	height: 20vh;
-	background-color: #9eb1b3;
-		
-}
-.option{	
-	padding: 10px;
-	width: 15vw;
-	height: 10vh;
-	font-size: larger;
-	background-color: lightskyblue;
-	border-radius: 25%;
-}
-.option:hover{
-	background-color: lightgoldenrodyellow;
-}
-.navigation{
-	width: 80vw;
-	height: 10vh;
-	margin: 10px;
-	padding: 5px;
-	display: flex;
-	justify-content: space-around;
-	background-color:#c7dddf;
+.quiz-container{
+	background-color: #fff;
+	width: 500px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+	max-width: 100%;
+	padding: 4rem;
 }
 
-.evaluate,.next{
-	width:30vw;
-	height: 8vh;
-	padding: 5px;
-	font-size: larger;
+ul{
+	list-style-type: none;
+	padding: 0;
+
 }
-.evaluate{
-	
-	background-color: #50DBB4;
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
 }
-.next{
-	color: white;
-	background-color: #BF3325;
+
+ul li label {
+    cursor: pointer;
 }
+
+
+button {
+    background-color: #8e44ad;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 1.3rem;
+}
+button:hover {
+    background-color: #732d91;
+}
+
+
+button:focus {
+    background-color: #5e3370;
+    outline: none;
+}
+

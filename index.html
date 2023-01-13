@@ -10,23 +10,36 @@
 <body>
     <main>
         <div class="panel">
-            <div class="result"></div>
-            <div class="question-container">Questions</div>
-            <div class="option-container">
-                <button class="option" onclick="" id="op1">option1</button>
-                <button class="option"  id="op2">option2</button>
-                <button class="option"  id="op3">option3</button>
-                <button class="option"  id="op4">option4</button>
+            <div class="quiz-container">
+                <h2 id="question">Question text</h2>
+                <ul>
+                    <li>
+                        <input type="radio" 
+                        id="a" 
+                        name="answer"
+                        class="name">
+                        <label for="a" id="a_text" >Question</label></li>
+                    <li>
+                        <input type="radio" 
+                        id="b" 
+                        name="answer"
+                        class="name">
+                        <label for="b" id="b_text" >Question</label></li>
+                    <li>
+                        <input type="radio" 
+                        id="c"
+                        name="answer"
+                        class="name" >
+                        <label for="c" id="c_text" >Question</label></li>
+                    <li>
+                        <input type="radio" 
+                        id="d" 
+                        name="answer"
+                        class="name">
+                        <label for="d" id="d_text" >Question</label></li>
+                </ul>
+                <button id="submitbtn">Submit</button>
             </div>
-            <div class="navigation">
-                <button class="evalute">Evaluate</button>
-                <button class="next">Next</button>
-            </div>
-            <div class="controls">
-                <button id="start-btn" class="start-btn btn">Start</button>
-                <button id="next-btn" class="next-btn btn">Next</button>
-            </div>
-            
         </div>
     </main>
     <script src="script.js"></script>
